@@ -28,7 +28,7 @@ static func random_blocks():
 	return random_data
 
 
-static func flat(chunk_position):
+static func simple_noise(chunk_position):
 	var data = {}
 	if abs(chunk_position.x) > 2 || abs(chunk_position.y) > 2 || abs(chunk_position.z) > 2:
 		return data

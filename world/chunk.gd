@@ -24,7 +24,7 @@ func _ready():
 	if Settings.world_type == 0:
 		data = TerrainGenerator.random_blocks()
 	else:
-		data = TerrainGenerator.flat(chunk_position)
+		data = TerrainGenerator.simple_noise(chunk_position)
 	
 	# We can only add colliders in the main thread due to physics limitations.
 	_generate_chunk_collider()

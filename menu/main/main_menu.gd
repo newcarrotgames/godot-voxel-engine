@@ -24,14 +24,18 @@ func _on_Exit_pressed():
 
 func _on_RandomBlocks_pressed():
 	Settings.world_type = 0
-	tree.change_scene("res://world/world.tscn")
+	start_World()
 
 
-func _on_FlatGrass_pressed():
+func _on_SimpleNoise_pressed():
 	Settings.world_type = 1
-	tree.change_scene("res://world/world.tscn")
+	start_World()
 
 
 func _on_BackToTitle_pressed():
 	title.visible = true
 	start.visible = false
+
+
+func start_World():
+	tree.change_scene("res://world/world.tscn")

@@ -189,14 +189,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="FlatGrass" type="TextureButton" parent="StartGame/StartButtons"]
+[node name="SimpleNoise" type="TextureButton" parent="StartGame/StartButtons"]
 margin_top = 460.0
 margin_right = 384.0
 margin_bottom = 524.0
 rect_min_size = Vector2( 384, 64 )
 texture_normal = ExtResource( 7 )
 
-[node name="Label" type="Label" parent="StartGame/StartButtons/FlatGrass"]
+[node name="Label" type="Label" parent="StartGame/StartButtons/SimpleNoise"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -1.0
@@ -232,5 +232,5 @@ __meta__ = {
 [connection signal="pressed" from="TitleScreen/ButtonHolder/MainButtons/Options" to="." method="_on_Options_pressed"]
 [connection signal="pressed" from="TitleScreen/ButtonHolder/MainButtons/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="StartGame/StartButtons/RandomBlocks" to="." method="_on_RandomBlocks_pressed"]
-[connection signal="pressed" from="StartGame/StartButtons/FlatGrass" to="." method="_on_FlatGrass_pressed"]
+[connection signal="pressed" from="StartGame/StartButtons/SimpleNoise" to="." method="_on_SimpleNoise_pressed"]
 [connection signal="pressed" from="StartGame/StartButtons/BackToTitle" to="." method="_on_BackToTitle_pressed"]
